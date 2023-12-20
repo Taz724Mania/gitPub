@@ -18,8 +18,8 @@
     <h1>At Bad Wolf Bar</h1>
    
     <h2><%= drink.name %></h2>
-    <img src="<%= drink.image %>" alt="<%= drink.name %>" />
-    <h3>Price: <%= drink.price %></h3>
+    <img src="<%= drink.image + '.png' %>" alt="<%= drink.name %>" />
+    <h3>Price: $<%= drink.price %></h3>
     <a href="/drinks">Back</a>
 </body>
 </html>
