@@ -23,3 +23,7 @@ for (const drink in drinks) {
 app.listen(3000, () => {
     console.log('here for a drink')
 })
+
+app.get("/drinks/:id", (req, res) => {
+    res.send(req.params.id)
+})
