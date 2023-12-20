@@ -24,6 +24,10 @@ app.listen(3000, () => {
     console.log('here for a drink')
 })
 
-app.get("/drinks/:id", (req, res) => {
-    res.send(req.params.id)
-})
+app.get('/drinks/:id', (req, res) => {
+    const id = req.params.id
+    const drink = drinks[id]
+    res.render('show.ejs', { drink, id })
+  })
+
+
